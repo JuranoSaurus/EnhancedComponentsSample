@@ -17,7 +17,7 @@
         </activity>
 
         <service
-            android:name=".AAService_"></service>
+            android:name=".AAService_"/>
     </application>
 
 </manifest>

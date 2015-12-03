@@ -2,6 +2,7 @@ package com.juranoaa.enhancedcomponentssample;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.Toast;
 
 import org.androidannotations.annotations.Click;
@@ -13,8 +14,8 @@ public class AAMainActivity extends Activity {
     public static final String ACTION_TO_ACTIVITY = "ACTION_TO_ACTIVITY";
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         Intent intent = new Intent(this, AAService_.class);
         startService(intent);
@@ -32,3 +33,7 @@ public class AAMainActivity extends Activity {
                 Toast.LENGTH_SHORT).show();
     }
 }
+
+
+
+
